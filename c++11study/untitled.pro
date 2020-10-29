@@ -32,4 +32,5 @@ SOURCES += \
 HEADERS += \
         mainwindow.h \
     testclass.h \
-    elevenfeature.h
+    elevenfeature.h \
+    memory.h

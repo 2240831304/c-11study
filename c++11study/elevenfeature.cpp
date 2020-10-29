@@ -72,8 +72,7 @@ void ElevenFeature::commonFunction()
         std::cout << "Display from MainThread" << std::endl;
     //threadObj.detach();
     threadObj.join();
-   std::cout << std::this_thread::get_id() << std::endl;
-    std::cout << "Exit of Main function" << std::endl;
+    std::cout << "Exit of commonFunction of Multithreading" << std::endl;
 }
 
 void ElevenFeature::conditionFunction()
