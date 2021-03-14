@@ -7,11 +7,25 @@
 using namespace std;
 #include "memory.h"
 
+void test()
+{
+        char *p = NULL;
+        *p = 'T';
+}
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-//    MainWindow w;
-//    w.show();
+
+#if 0
+    test();
+#endif
+
+
+#if 1
+    MainWindow w;
+    w.show();
+#endif
 
 #if 0
     BaseClass *base = new SubClass;
@@ -24,19 +38,19 @@ int main(int argc, char *argv[])
 #endif
 
 #if 0
-    KeywordClass KeywordClass1;
-    KeywordClass1.test();
+//    KeywordClass KeywordClass1;
+//    KeywordClass1.test();
 
     DriveKeywordClass DriveKeywordClass1;
-    DriveKeywordClass1.test();
+    //DriveKeywordClass1.test();
     //DriveKeywordClass1.func();
     //DriveKeywordClass1.func(1);
     //DriveKeywordClass1.lambdafunc();
-    //DriveKeywordClass1.SmartPointer();
+    DriveKeywordClass1.SmartPointer();
 
 
-    const DriveKeywordClass DriveKeywordClass2;
-    DriveKeywordClass2.constfunc();
+//    const DriveKeywordClass DriveKeywordClass2;
+//    DriveKeywordClass2.constfunc();
 
 
     //KeywordClass KeywordClass2 = KeywordClass1;

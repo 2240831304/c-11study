@@ -18,6 +18,25 @@ public:
     {
         qDebug() << "ji lei xigou";
     }
+
+    void printfNum(int num)
+    {
+        qDebug() << "BaseClass printfNum===" << num;
+    }
+
+    int getNum()
+    {
+        return retnum;
+    }
+
+    QString getString()
+    {
+        return retString;
+    }
+
+private:
+    int retnum;
+    QString retString;
 };
 
 

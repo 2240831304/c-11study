@@ -3,27 +3,31 @@
 #include <QDebug>
 #include <QStringList>
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
+#include "testclass.h"
+
+class MainWindowPrivate
 {
-//    QString tempStr = "[00:23.88]走在铁路旁";
-//    QStringList list = tempStr.split(QRegExp("[\[\\]]"));
-//    //QStringList list = tempStr.split(QRegExp("[0-9]{2}"));
-//    //list << "W@W2" << "wsw";
-//    qDebug() << list;
-    int lenth = 3088;
-    int hour = lenth / 3600;
-    QTime time(0,0,0,0);
-    QString str;
-    time = time.addMSecs(lenth);
-    if(hour > 0)
-        str = time.toString("hh:mm:ss");
-    else
-        str = time.toString("mm:ss");
-    qDebug() << "555555555555555===" << str << time.second();
+public:
+    BaseClass *baseTest;
+
+};
+
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent),d(new MainWindowPrivate)
+{
+    resize(800,600);
+
+    d->baseTest->printfNum(36);
+    int retnum = d->baseTest->getNum();
+    QString retString = d->baseTest->getString();
+    qDebug() << "MainWindow jhhhhhhhhh===" << retString;
 }
 
 MainWindow::~MainWindow()
 {
+    if(d){
+        delete d;
+        d = nullptr;
+    }
 
 }
