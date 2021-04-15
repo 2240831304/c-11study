@@ -20,7 +20,7 @@ class Application {
     bool m_bDataLoaded;
 public:
     Application() {
-        m_bDataLoaded = false;
+        m_bDataLoaded = true;
     }
 
     void loadData() {
