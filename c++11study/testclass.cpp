@@ -21,3 +21,7 @@ void DriveKeywordClass::test()
 void gittest()
 {
 }
+
+void gitnewbranch()
+{
+}
