@@ -19,8 +19,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     d->baseTest->printfNum(36);
     int retnum = d->baseTest->getNum();
-    QString retString = d->baseTest->getString();
-    qDebug() << "MainWindow jhhhhhhhhh===" << retString;
+    //QString retString = d->baseTest->getString();
+    //qDebug() << "MainWindow jhhhhhhhhh===" << retString;
 }
 
 MainWindow::~MainWindow()
