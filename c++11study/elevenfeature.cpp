@@ -25,6 +25,8 @@ public:
     }
 
     void loadData() {
+
+        std::cout << "fffffffffffffffffffff" << std::endl;
         //使该线程sleep 1秒
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
         std::cout << "condition_variable Loading Data start notify!!" << std::endl;

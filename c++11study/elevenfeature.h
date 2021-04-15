@@ -9,6 +9,7 @@ public:
 
     void commonFunction();
     void conditionFunction();
+    void test();
 };
 
 #endif // ELEVENFEATURE_H
