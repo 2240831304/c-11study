@@ -17,3 +17,7 @@ void DriveKeywordClass::test()
 {
     cout << "DriveKeywordClass virtual test function" << endl;
 }
+
+void gittest()
+{
+}
