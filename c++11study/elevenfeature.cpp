@@ -20,7 +20,8 @@ class Application {
     bool m_bDataLoaded;
 public:
     Application() {
-        m_bDataLoaded = true;
+        m_bDataLoaded = false;
+        sstd::cout << "3333333333333333" << std::endl;
     }
 
     void loadData() {
