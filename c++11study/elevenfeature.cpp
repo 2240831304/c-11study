@@ -87,3 +87,13 @@ void ElevenFeature::conditionFunction()
     thread_2.join();
     thread_1.join();
 }
+
+void ElevenFeature::test()
+{
+
+}
+
+void ElevenFeature::test1()
+{
+
+}
